@@ -4,7 +4,8 @@
 \ifnativelang
 \newcommand{\CVheader}{6+ ann\'ees d'exp\'erience en syst\`emes temps-r\'eels, Linux embarqu\'e et r\'eseaux \`a applications m\'edicales}
 \else
-\newcommand{\CVheader}{6+ years of experience in Real-Time systems, embedded linux and networking for medical applications}
+\newcommand{\CVheader}{6+ years of experience in Real-Time systems, embedded linux and networking.\\
+Experience in project steering and team management.}
 \fi
 
 \begin{center}
@@ -22,7 +23,7 @@
 \item \ifnativelang Communication SPI, UART, I2C \else SPI, UART, I2C communication \fi
 \end{itemize}
 }
-{\textbf{Langages}}{
+{\ifnativelang\textbf{Langages}\else \textbf{Languages}\fi}{
 \score{4.5}{5} MISRA C\\
 \score{4}{5} Python \\
 %\score{4}{5} Linux and scripting\\
@@ -57,7 +58,7 @@
 \item \ifnativelang 10+ papiers scientifiques (1 best-paper) \else 10+ research articles (1 best-paper award) \fi
 \item \ifnativelang Implication dans l'Open-Source \else Involved in Open-Source projects \fi
 \end{itemize}
-}{\textbf{Project and team mngt.}}{
+}{\textbf{\small{\ifnativelang Gestion de projet\else Project steering\fi}}}{
 \begin{itemize}
 %TODO
 \item \ifnativelang Pilotage et planification de projet \else Management and editorial capabilities \fi
