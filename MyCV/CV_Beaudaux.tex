@@ -1,0 +1,57 @@
+% Define the basic elements of the document
+\documentclass[10pt,a4paper]{moderncv}
+\moderncvtheme[blue]{classic}
+
+% Change the following variables to set the document overall display
+\newcommand{\TopMargin}{0.8cm}
+\newcommand{\SideMargin}{0.8cm}
+\newcommand{\ItemsSpacing}{0.2cm}
+
+% Select the CV language : Native or english (default)
+\newif \ifnativelang
+%\nativelangtrue % Uncomment to integrate references
+
+\input{includes}
+
+% This file contains user's general informations. Modify if necessary
+\input{contactInfos}
+
+% Optional CV parts to include
+\newif \ifreferences
+%\referencestrue % Uncomment to integrate references
+
+\newif \ifhobbies
+%\hobbiestrue % Uncomment to integrate references
+
+
+
+
+%Start CV generation here
+\begin{document}
+\maketitle
+
+% Header and Skills section. Go to file to modify details
+\input{skills}
+
+\vspace{\ItemsSpacing}
+
+% Experience section. Go to file to modify details
+\input{experience}
+
+% References section. Go to file to modify details
+\ifreferences
+\input{references}
+\fi
+
+\vspace{\ItemsSpacing}
+
+% Projects section. Go to file to modify details
+\input{projects}
+
+% Education section. Go to file to modify details
+\input{education}
+
+% Misc section. Optional and additional infos
+\input{misc}
+
+\end{document}
