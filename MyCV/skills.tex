@@ -2,7 +2,7 @@
 
 % Defines the text to use
 \ifnativelang
-\newcommand{\CVheader}{6+ ann\'ees d'exp\'erience en syst\`emes temps-r\'eels, Linux embarqu\'e et r\'eseaux \`a applications m\'edicales}
+\newcommand{\CVheader}{6+ ann\'ees d'exp\'erience en syst\`emes embarqu\'es et r\'eseaux pour applications m\'edicales.\\ Exp\'erience en gestion de projet et conduite d'\'equipe.}
 \else
 \newcommand{\CVheader}{6+ years of experience in Real-Time systems, embedded linux and networking.\\
 Experience in project steering and team management.}
@@ -16,11 +16,11 @@ Experience in project steering and team management.}
 \subsection{\ifnativelang Comp\'etences techniques\else Technical skills\fi}
 
 \cvcomputer{
-\textbf{\ifnativelang Syst\`emes embarqu\'es\else Embedded systems\fi}}{
+\textbf{\ifnativelang Syst\`emes embarqu\'es\else Embedded systems \fi}}{
 \begin{itemize}
-\item \ifnativelang OS temps-r\'eel embarqu\'e \else Embedded real-time OSs \fi (RTX, Contiki)
-\item \ifnativelang Linux embarqu\'e \else Embedded linux \fi (Buildroot, Yocto)
-\item \ifnativelang Communication SPI, UART, I2C \else SPI, UART, I2C communication \fi
+\item \ifnativelang Syst\`emes embarqu\'es (OS temps-r\'eel, Linux)\else Embedded systems (Real-time OSs, Linux)\fi
+\item \ifnativelang R\'eseaux et IoT \else Networking\fi (Sigfox, Bluetooth, GSM)
+\item \ifnativelang Tests unitaires, analyse statique \else Unit testing, static analysis \fi (Parasoft)
 \end{itemize}
 }
 {\ifnativelang\textbf{Langages}\else \textbf{Languages}\fi}{
@@ -30,26 +30,7 @@ Experience in project steering and team management.}
 \score{3.5}{5} C++ \& Java
 }
 
-\vspace{\ItemsSpacing}
-
-\cvcomputer{
-\textbf{\ifnativelang R\'eseaux\else Networking\fi}}{
-\begin{itemize}
-\item \ifnativelang Protocoles \else Protocol stacks \fi (TCP/IP, Bluetooth, GSM)
-\item \ifnativelang Internet des objets \else Internet of things \fi (Zigbee, Sigfox, RFID)
-\end{itemize}
-}
-{\textbf{\ifnativelang Autres\else Misc.\fi}}{
-\begin{itemize}
-\item \ifnativelang Tests unitaires, analyse statique \else Unit testing, static analysis \fi (Parasoft)
-\item \ifnativelang Analyse de donn\'ees \else Data-analysis \fi (statistiques, numPy)
-%\item Version control tools (Git, SVN)
-\end{itemize}
-}
-
-
-
-\vspace{\ItemsSpacing}
+\vspace{\ItemsMinSpacing}
 
 \subsection{\ifnativelang Autres comp\'etences\else Other skills\fi}
 
@@ -62,18 +43,24 @@ Experience in project steering and team management.}
 \begin{itemize}
 %TODO
 \item \ifnativelang Pilotage et planification de projet \else Management and editorial capabilities \fi
-\item \ifnativelang Outils de gestion (SVN, Git, Gantt, etc.) \else Project steering tools (Gantt, DCF, DITA) \fi
+\item \ifnativelang Documentation et affaires r\'eglementaires \else Documentation and regulatory affairs \fi
 %\item CE Mark (ISO 62304) \& FDA clearance %(21CFR11/820)
 \end{itemize}}
 
-\vspace{\ItemsSpacing}
+\vspace{\ItemsMinSpacing}
 
-\subsection{\ifnativelang Langues\else Languages\fi}
-\ifnativelang
-\hspace{3.1cm}\textbf{Fran\c cais} - Langue maternelle, \textbf{Anglais} - Bilingue, \textbf{Japonais} - Avanc\'e, \textbf{Ukrainien} - Interm\'ediaire
-\else
-\hspace{3.1cm}\textbf{French} - Mother tongue, \textbf{English} - Fluent, \textbf{Japanese} - Advanced, \textbf{Ukrainian} - Intermediate
-\fi
+\cventry{\textbf{\small{\ifnativelang Langues\else Languages\fi}}}
+{Fran\c cais - \textmd{Langue maternelle,} Anglais - \textmd{Bilingue,} Japonais - \textmd{Avanc\'e,} Ukrainien - \textmd{Interm\'ediaire}}{}{}{}{}
+%\cventry{\textbf{\small{\ifnativelang Langues\else Languages\fi}}}{\textbf{Fran\c cais} - Langue maternelle, \textbf{Anglais} - Bilingue, \textbf{Japonais} - Avanc\'e, \textbf{Ukrainien} - Interm\'ediaire}{}{}
+
+
+
+%\subsection{\ifnativelang Langues\else Languages\fi}
+%\ifnativelang
+%\hspace{3.1cm}\textbf{Fran\c cais} - Langue maternelle, \textbf{Anglais} - Bilingue, \textbf{Japonais} - Avanc\'e, \textbf{Ukrainien} - Interm\'ediaire
+%\else
+%\hspace{3.1cm}\textbf{French} - Mother tongue, \textbf{English} - Fluent, \textbf{Japanese} - Advanced, \textbf{Ukrainian} - Intermediate
+%\fi
 
 
 
