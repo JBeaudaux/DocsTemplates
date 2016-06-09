@@ -19,10 +19,10 @@ Experience in project steering and team management.}
 \cvcomputer{
 \textbf{\ifnativelang Syst\`emes embarqu\'es\else Embedded systems \fi}}{
 \begin{itemize}
-\item \ifnativelang OSs temps-r\'eel (Free-RTOS, RTX, Contiki) \else Real-time OSs (\fi
-\item \ifnativelang Linux embarqu\'e (Buildroot, Yocto) \else Embedded systems (Real-time OSs, Linux)\fi
+\item \ifnativelang OSs temps-r\'eel \else Real-time OSs \fi : Free-RTOS, RTX, Contiki
+\item \ifnativelang Linux embarqu\'e \else Embedded Linux \fi : Buildroot, Yocto
 %\item \ifnativelang Communication SPI, UART, I2C \else Networking\fi
-\item \ifnativelang D\'eveloppement bas-niveau \else Networking\fi
+\item \ifnativelang D\'eveloppement bas-niveau \else Low-level development\fi
 %\item \ifnativelang Tests unitaires, analyse statique \else Unit testing, static analysis \fi (Parasoft)
 \end{itemize}
 }
@@ -36,31 +36,30 @@ Experience in project steering and team management.}
 
 \vspace{\ItemsSpacing}
 
-\cvcomputer{\textbf{\small{\ifnativelang R\'eseaux\fi}}}{
+\cvcomputer{\textbf{\small{\ifnativelang R\'eseaux\else Networking\fi}}}{
 \begin{itemize}
-\item \ifnativelang Protocoles standards : TCP/IP, GSM \else Unit testing, static analysis \fi
-\item \ifnativelang Internet des objets : Sigfox/LoRa, Zigbee \else Management and editorial capabilities \fi
+\item \ifnativelang Protocoles standards \else Standard protocols \fi : TCP/IP, GSM
+\item \ifnativelang Internet des objets \else Internet of things \fi : Sigfox/LoRa, Zigbee
 \end{itemize}
-}{\textbf{\small{\ifnativelang Contr\^ole de qualit\'e\else Misc.\fi}}}{
+}{\textbf{\small{\ifnativelang Contr\^ole qualit\'e\else Quality control\fi}}}{
 \begin{itemize}
-\item \ifnativelang Tests unitaires, analyse statique \else Unit testing, static analysis \fi (Parasoft)
-\item \ifnativelang Analyse de donn\'ees et stress-testing \else Management and editorial capabilities \fi
-%\item CE Mark (ISO 62304) \& FDA clearance %(21CFR11/820)
+\item \ifnativelang Int\'egration continue, analyse statique \else Continuous integration, static analysis \fi
+\item \ifnativelang Tests unitaires et de performance \else Unit and performance testing\fi
 \end{itemize}}
 
 \vspace{\ItemsMinSpacing}
 
-\subsection{\ifnativelang Comp\'etences fonctionnelles\else Other skills\fi}
+\subsection{\ifnativelang Comp\'etences fonctionnelles\else Functional skills\fi}
 
 \cvcomputer{\textbf{\small{\ifnativelang Gestion de projet\else Project steering\fi}}}{
 \begin{itemize}
-\item \ifnativelang Connaissances en gestion de projet \else Agile team management (3-5 persons) \fi
-\item \ifnativelang Expérience en conduite d'équipes \fi
+\item \ifnativelang Connaissances en gestion de projet \else Knowledge in progect management\fi
+\item \ifnativelang Expérience en conduite d'équipes \else Experience in team leadership\fi
 \end{itemize}
 }{\textbf{\small{\ifnativelang Documentation et normes \else Project steering\fi}}}{
 \begin{itemize}
-\item \ifnativelang Rédaction des documents applicables \else XXXXX \fi
-\item \ifnativelang Normes médicales : ISO 62304, CE \& FDA\else Experience in CE Mark and FDA clearance\fi
+\item \ifnativelang Rédaction des documents applicables \else Applicable documents writing \fi
+\item \ifnativelang Normes médicales \else Medical norms \fi : ISO 62304, CE \& FDA
 %\item CE Mark (ISO 62304) \& FDA clearance %(21CFR11/820)
 %Rédaction de référentiels d'exigences
 %Chiffrage projet et participation à la rédaction des propositions commerciales, forte implication en avant-vente
@@ -75,8 +74,13 @@ Experience in project steering and team management.}
 
 \vspace{\ItemsSpacing}
 
-\cventry{\textbf{\small{\ifnativelang Langues\else Languages\fi}}}
-{Anglais - \textmd{Bilingue,} Japonais - \textmd{Avanc\'e,} Ukrainien - \textmd{Interm\'ediaire}}{}{}{}{}
+\ifnativelang
+\cventry{\textbf{\small{Langues}}}
+{Fran\c cais - \textmd{Langue maternelle,} Anglais - \textmd{Bilingue,} Japonais - \textmd{Avanc\'e,} Ukrainien - \textmd{Interm\'ediaire}}{}{}{}{}
+\else
+\cventry{\textbf{\small{Languages}}}
+{French - \textmd{Mother tongue,} English - \textmd{Fluent,} Japanese - \textmd{Advanced,} Ukrainian - \textmd{Intermediate}}{}{}{}{}
+\fi
 
 %\cventry{\textbf{\small{\ifnativelang Langues\else Languages\fi}}}{\textbf{Fran\c cais} - Langue maternelle, \textbf{Anglais} - Bilingue, \textbf{Japonais} - Avanc\'e, \textbf{Ukrainien} - Interm\'ediaire}{}{}
 
