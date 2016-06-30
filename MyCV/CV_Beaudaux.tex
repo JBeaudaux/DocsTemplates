@@ -5,12 +5,19 @@
 % Change the following variables to set the document overall display
 \newcommand{\TopMargin}{0.8cm}
 \newcommand{\SideMargin}{0.8cm}
+
+\newcommand{\ItemsMaxSpacing}{0.4cm}
 \newcommand{\ItemsSpacing}{0.3cm}
 \newcommand{\ItemsMinSpacing}{0.1cm}
+
+\newcommand{\ListItemsMargins}{1.cm}
 
 % Select the CV language : Native or english (default)
 \newif \ifnativelang
 \nativelangtrue % Uncomment to switch to French
+
+\newif \ifaddmngt
+%\addmngttrue % Uncomment to remove management part
 
 \input{includes}
 
@@ -19,10 +26,10 @@
 
 % Optional CV parts to include
 \newif \ifreferences
-\referencestrue % Uncomment to integrate references
+%\referencestrue % Uncomment to integrate references
 
 \newif \ifhobbies
-%\hobbiestrue % Uncomment to integrate references
+\hobbiestrue % Uncomment to integrate references
 
 
 
@@ -41,11 +48,6 @@
 % Experience section. Go to file to modify details
 \input{experience}
 
-% References section. Go to file to modify details
-\ifreferences
-\input{references}
-\fi
-
 %\end{minipage} 
 %\hfill
 %\begin{minipage}[t]{0.45\textwidth} 
@@ -57,6 +59,11 @@
 
 % Education section. Go to file to modify details
 \input{education}
+
+% References section. Go to file to modify details
+\ifreferences
+\input{references}
+\fi
 
 % Misc section. Optional and additional infos
 \input{misc}

@@ -14,15 +14,18 @@ Experience in project steering and team management.}
 %\end{center}
 
 \section{\ifnativelang Comp\'etences cl\'e\else Key skills\fi}
+
+\ifaddmngt
 \subsection{\ifnativelang Comp\'etences techniques\else Technical skills\fi}
+\fi
 
 \cvcomputer{
 \textbf{\ifnativelang Syst\`emes embarqu\'es\else Embedded systems \fi}}{
 \begin{itemize}
-\item \ifnativelang OSs temps-r\'eel \else Real-time OSs \fi : Free-RTOS, RTX, Contiki
+\item \ifnativelang OSs temps-r\'eel \else Real-time OSs \fi : CMSIS-RTOS, Contiki
 \item \ifnativelang Linux embarqu\'e \else Embedded Linux \fi : Buildroot, Yocto
-%\item \ifnativelang Communication SPI, UART, I2C \else Networking\fi
-\item \ifnativelang D\'eveloppement bas-niveau \else Low-level development\fi
+\item \ifnativelang Communication SPI, UART, I2C \else Networking\fi
+% \item \ifnativelang D\'eveloppement bas-niveau \else Low-level development\fi
 %\item \ifnativelang Tests unitaires, analyse statique \else Unit testing, static analysis \fi (Parasoft)
 \end{itemize}
 }
@@ -46,6 +49,8 @@ Experience in project steering and team management.}
 \item \ifnativelang Int\'egration continue, analyse statique \else Continuous integration, static analysis \fi
 \item \ifnativelang Tests unitaires et de performance \else Unit and performance testing\fi
 \end{itemize}}
+
+\ifaddmngt
 
 \vspace{\ItemsMinSpacing}
 
@@ -71,12 +76,14 @@ Experience in project steering and team management.}
 %\item \ifnativelang Implication dans l'Open-Source \else Involved in Open-Source projects \fi
 %\end{itemize}
 
+\fi
+
 
 \vspace{\ItemsSpacing}
 
 \ifnativelang
 \cventry{\textbf{\small{Langues}}}
-{Fran\c cais - \textmd{Langue maternelle,} Anglais - \textmd{Bilingue,} Japonais - \textmd{Avanc\'e,} Ukrainien - \textmd{Interm\'ediaire}}{}{}{}{}
+{Fran\c cais - \textmd{Langue maternelle,} Anglais - \textmd{Courant,} Japonais - \textmd{Avanc\'e,} Ukrainien - \textmd{Interm\'ediaire}}{}{}{}{}
 \else
 \cventry{\textbf{\small{Languages}}}
 {French - \textmd{Mother tongue,} English - \textmd{Fluent,} Japanese - \textmd{Advanced,} Ukrainian - \textmd{Intermediate}}{}{}{}{}

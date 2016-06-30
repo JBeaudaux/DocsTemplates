@@ -1,3 +1,5 @@
+%\vspace{\ItemsSpacing}
+
 \ifnativelang
 \section{\'Education}
 \else
@@ -11,7 +13,8 @@
 %\fi
 
 \ifnativelang
-\cventry{2013}{Doctorat en informatique}{}{"R\'eseaux de capteurs pour la T\'el\'em\'edecine"}{\textit{Universit\'e de Strasbourg}}{}
+\cventry{2013}{Doctorat en informatique}{"R\'eseaux de capteurs pour la T\'el\'em\'edecine"}{}{\textit{Universit\'e de Strasbourg}}{}
+% "R\'eseaux de capteurs pour la T\'el\'em\'edecine"
 \else
 \cventry{2013}{Ph.D in computer science}{}{Sensor networks for telemedicine}{\textit{University of Strasbourg, France}}{}
 \fi
@@ -29,21 +32,25 @@
 \fi
 
 
-%\vspace{\ItemsMinSpacing}
-%
-%\ifnativelang
-%\subsection{Formations transverses}
-%
-%\cventry{2016}{Gestion de projet}{}
-%{}
-%{\textit{\'Ecole centrale de Lille}}{}
-%\else
-%\subsection{Non-formal learning}
-%
-%\cventry{2016}{Project management}{}
-%{45h-long formation}
-%{\textit{\'Ecole centrale de Lille, France}}{}
-%\fi
+\ifaddmngt
+
+\vspace{\ItemsMinSpacing}
+
+\ifnativelang
+\subsection{Formations transverses}
+
+\cventry{2016}{Gestion de projet}{}
+{}
+{\textit{\'Ecole centrale de Lille}}{}
+\else
+\subsection{Non-formal learning}
+
+\cventry{2016}{Project management}{}
+{45h-long formation}
+{\textit{\'Ecole centrale de Lille, France}}{}
+\fi
+
+\fi
 
 %\cventry{2016}{coaching programme}{}
 %{}
