@@ -2,8 +2,8 @@
 
 % Defines the text to use
 \ifnativelang
-\newcommand{\CVheader}{6+ ann\'ees d'exp\'erience en ing\'enierie des syst\`emes embarqu\'es et r\'eseaux.\\% pour applications m\'edicales.\\
-Expérience en conduite d’équipe et normes médicales.}
+\newcommand{\CVheader}{6 ann\'ees d'exp\'erience en syst\`emes embarqu\'es critiques et r\'eseaux.}% pour applications m\'edicales.\\
+%Expérience en conduite d’équipe et normes médicales.}
 \else
 \newcommand{\CVheader}{6+ years of experience in Real-Time systems, embedded linux and networking.\\
 Experience in project steering and team management.}
@@ -22,16 +22,16 @@ Experience in project steering and team management.}
 \cvcomputer{
 \textbf{\ifnativelang Syst\`emes embarqu\'es\else Embedded systems \fi}}{
 \begin{itemize}
-\item \ifnativelang OSs temps-r\'eel \else Real-time OSs \fi : CMSIS-RTOS, Contiki
+\item \ifnativelang OSs temps-r\'eel \else Real-time OSs \fi : Keil CMSIS, Contiki, QNX %ThreadX
 \item \ifnativelang Linux embarqu\'e \else Embedded Linux \fi : Buildroot, Yocto
-\item \ifnativelang Communication SPI, UART, I2C \else Networking\fi
+\item \ifnativelang Communication SPI, UART, I2C, CAN \else Networking\fi
 % \item \ifnativelang D\'eveloppement bas-niveau \else Low-level development\fi
 %\item \ifnativelang Tests unitaires, analyse statique \else Unit testing, static analysis \fi (Parasoft)
 \end{itemize}
 }
 {\ifnativelang\textbf{Langages}\else \textbf{Languages}\fi}{
-\score{4.5}{5} MISRA C / C++\\
-\score{4}{5} Python, Java \\
+\score{4.5}{5} MISRA C \\%/ C++\\
+\score{4}{5} Python, Java, C++ \\
 %\score{4}{5} Linux and scripting\\
 %\score{3.5}{5} C++ \& Java \\
 \score{3}{5} Angular, HTML5, CSS
