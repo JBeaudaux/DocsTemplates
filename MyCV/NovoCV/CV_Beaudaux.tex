@@ -1,0 +1,256 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Twenty Seconds Resume/CV
+% LaTeX Template
+% Version 1.1 (8/1/17)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Carmine Spagnuolo (cspagnuolo@unisa.it) with major modifications by 
+% Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[letterpaper]{twentysecondcv} % a4paper for A4
+
+%----------------------------------------------------------------------------------------
+%	 PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+% If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
+
+\profilepic{img/jul.png} % Profile picture
+
+\cvname{Julien Beaudaux} % Your name
+\cvjobtitle{Ing\'enieur Informatique} % Job title/career
+
+\cvdate{} % Date of birth
+\cvaddress{Schiltigheim (67)} % Short address/location, use \newline if more than 1 line is required
+\cvnumberphone{06.75.98.14.24} % Phone number
+\cvsite{zirkachok.github.io} % Personal website
+\cvmail{julienbeaudaux@gmail.com} % Email address
+
+
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	 ABOUT ME
+%----------------------------------------------------------------------------------------
+
+\aboutme{
+Ing\'enieur informatique depuis plus de 6 ans, j'aime relever les d\'efis techniques et d\'ecouvrir de nouvelles technologies. J'interviens sur des domaines allant des syst\`emes embarqu\'es aux application web, desktop, et mobile.\\
+Ouvert, dynamique et passionn\'e, je sais m'int\'egrer rapidement et m'adapter \`a toutes les situation.
+} % To have no About Me section, just remove all the text and leave \aboutme{}
+
+%----------------------------------------------------------------------------------------
+%	 SKILLS
+%----------------------------------------------------------------------------------------
+
+% Skill bar section, each skill must have a value between 0 an 6 (float)
+\skills{{Go, R/3},{C++, Angular JS/4},{C, Java, Python/5}}
+%\skills{{Bash script, Angular JS /4} , {C, Java, Python /5}}
+
+%------------------------------------------------
+
+% Skill text section, each skill must have a value between 0 an 6
+%\skillstext{{lovely/4},{narcissistic/3}}
+
+%----------------------------------------------------------------------------------------
+
+\makeprofile % Print the sidebar
+
+%----------------------------------------------------------------------------------------
+%	 INTERESTS
+%----------------------------------------------------------------------------------------
+
+%\section{Interests}
+
+%The heroine and the dreamer of Wonderland; Alice is the principal character.
+
+\vspace{0.5cm}
+
+\section{Comp\'etences cl\'es}
+
+\subsection{Comp\'etences techniques}
+
+\begin{tabular*}{\textwidth}{ll}
+	\parbox[t]{0.45\textwidth}{
+		\textbf{Sp\'ecialit\'es:}
+		\begin{itemize}
+			\item Syst\`emes embarqu\'es
+			\item D\'eveloppement mobile et Cloud
+			\item GUIs: GTK, Tkinter, Qt
+		\end{itemize}
+	} & \parbox[t]{0.55\textwidth}{
+		\textbf{Contr\^ole qualit\'e:}
+		\begin{itemize}
+			\item Outils de gestion: Git, SVN, Mantis
+			\item Int\'egration continue, analyse statique
+			\item Tests unitaires et de performance
+		\end{itemize}
+	}
+\end{tabular*}
+
+\vspace{0.3cm}
+
+\subsection{Comp\'etences fonctionnelles}
+
+\begin{tabular*}{\textwidth}{ll}
+	\parbox[t]{0.45\textwidth}{
+		\textbf{Langues:}
+		\begin{itemize}
+			\item Anglais courant
+			\item Japonais interm\'ediaire
+		\end{itemize}
+	} & \parbox[t]{0.55\textwidth}{
+		\textbf{Gestion de projet:}
+		\begin{itemize}
+			\item Suivi agile de projet (Scrum, Kanban)
+			\item Conduite d’\'equipe (3-5 ing\'enieurs)
+		\end{itemize}
+	}
+\end{tabular*}
+
+
+\vspace{0.5cm}
+%----------------------------------------------------------------------------------------
+%	 EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Exp\'eriences}
+
+\begin{twenty} % Environment for a list with descriptions
+
+	\vspace{0.5cm}
+	\twentyitem{2014 - ...\hspace{-15mm}\raisebox{-10mm}{\includegraphics[width=2cm]{img/schiller.png}}}{Ing\'enieur informatique r\'ef\'erent\\Schiller M\'edical}{Wissembourg (67)}{
+		\textbf{Missions:}
+		\begin{itemize}
+			\item D\'eveloppement embarqu\'e en \textbf{C \& C++} %sur OS temps-r\'eel et Linux
+			\item D\'eveloppement mobile en \textbf{Angular JS} sur framework Ionic
+			\item Cr\'eation d'outils applicatifs en \textbf{Java \& Python}
+			\item Suivi documentaire et respect des normes m\'edicales
+		\end{itemize}
+		\textbf{Projets:} D\'efibrillateur FRED PA-1 \textcolor{mainblue}{\href{http://www.schiller.ch/fr/fr/product/fred-pa-1}{\ExternalLink}}, App. mobile Open-Heart \textcolor{mainblue}{\href{http://www.schiller.ch/corp/en/schiller-cutting-edge-connected-health}{\ExternalLink}}
+	}
+	
+	\vspace{0.5cm}
+
+	\twentyitem{2013 - 2014\hspace{-20mm}\raisebox{-12mm}{\includegraphics[width=2cm]{img/NTNU_Stolav2.jpg}}}{Ing\'enieur R\&D\\NTNU / H\^opital St-Olav}{Trondheim, Norv\`ege}{
+	\textbf{Missions:}
+		\begin{itemize}
+			\item Cr\'eation en \textbf{Python \& Java} d'outils d'analyse de donn\'ees
+			\item Documentation et suivi de projet Europ\'een H2020
+		\end{itemize}
+	}
+
+	\vspace{-1.1cm}
+
+	\twentyitem{2010 - 2013\hspace{-20mm}\raisebox{-17mm}{\includegraphics[width=2cm]{img/icubeiij.png}}}{Doctorant\\Laboratoire ICube \&}{Strasbourg (67)}{}
+	\twentyitem{}{Internet Initiative Japan}{Tokyo, Japon}{
+		\textbf{Missions:}
+		\begin{itemize}
+			\item D\'eveloppement en \textbf{C} sur capteurs domotiques
+			\item D\'eveloppement en \textbf{Python/Twisted} d'un service Cloud de stockage de fichiers
+			\item Enseignement niveau IUT et Master : \textbf{Java}, syst\`emes \& r\'eseaux
+		\end{itemize}
+		\textbf{Projets:} Plateforme IoT-Lab \textcolor{mainblue}{\href{https://www.iot-lab.info/}{\ExternalLink}}, Service TAMIAS \textcolor{mainblue}{\href{https://tamias.iijlab.net/?page_id=6}{\ExternalLink}}
+
+%		\vspace{-0.3cm}
+%		\begin{itemize}
+%			\item D\'eveloppement en C sur capteurs domotiques
+%			\item D\'eveloppement en Python/Twisted d'un service Cloud de stockage de fichiers
+%			\item Enseignement niveau IUT et Master : Java, syst\`emes \& r\'eseaux
+%		\end{itemize}
+	}
+	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
+\end{twenty}
+
+\vspace{0.5cm}
+
+%----------------------------------------------------------------------------------------
+%	 EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{\'Education}
+
+\subsection{Formation universitaire}
+
+\begin{twenty} % Environment for a list with descriptions
+
+	\twentyitem{2010 - 2013}{Doctorat en Informatique}{Universit\'e de Strasbourg}{Sp\'ecialit\'e r\'eseaux}%{\emph{A Quantified Theory of Social Cohesion.}}
+
+	\twentyitem{2008 - 2010}{Master en Informatique}{Universit\'e de Strasbourg}{Sp\'ecialit\'e R\'eseaux Informatiques et Syst\`emes Embarqu\'es}
+	\twentyitem{2005 - 2008}{Licence en Informatique}{Universit\'e de Strasbourg}{}
+	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
+\end{twenty}
+\vspace{-0.3cm}
+\subsection{Formation transverses}
+\begin{twenty} % Environment for a list with descriptions
+	\vspace{-0.3cm}
+	\twentyitem{En cours}{Certification Ing\'enieur de la Fondation Linux (LFCE)}{Fondation Linux}{}
+
+	\twentyitem{2016}{Formation en gestion de projet}{\'Ecole centrale de Lille}{}
+\end{twenty}
+
+%----------------------------------------------------------------------------------------
+%	 PUBLICATIONS
+%----------------------------------------------------------------------------------------
+%
+%\section{Publications}
+%
+%\begin{twentyshort} % Environment for a short list with no descriptions
+%	\twentyitemshort{1865}{Chapter One, Down the Rabbit Hole.}
+%	\twentyitemshort{1865}{Chapter Two, The Pool of Tears.}
+%	\twentyitemshort{1865}{Chapter Three,  The Caucus Race and a Long Tale.}
+%	\twentyitemshort{1865}{Chapter Four,  The Rabbit Sends a Little Bill.}
+%	\twentyitemshort{1865}{Chapter Five,  Advice from a Caterpillar.}
+%	%\twentyitemshort{<dates>}{<title/description>}
+%\end{twentyshort}
+
+%----------------------------------------------------------------------------------------
+%	 AWARDS
+%----------------------------------------------------------------------------------------
+
+%\section{Awards}
+
+%\begin{twentyshort} % Environment for a short list with no descriptions
+%	\twentyitemshort{1987}{All-Time Best Fantasy Novel.}
+%	\twentyitemshort{1998}{All-Time Best Fantasy Novel before 1990.}
+	%\twentyitemshort{<dates>}{<title/description>}
+%\end{twentyshort}
+
+
+%----------------------------------------------------------------------------------------
+%	 SECOND PAGE EXAMPLE
+%----------------------------------------------------------------------------------------
+
+%\newpage % Start a new page
+
+%\makeprofile % Print the sidebar
+
+%\section{Other information}
+
+%\subsection{Review}
+
+%Alice approaches Wonderland as an anthropologist, but maintains a strong sense of noblesse oblige that comes with her class status. She has confidence in her social position, education, and the Victorian virtue of good manners. Alice has a feeling of entitlement, particularly when comparing herself to Mabel, whom she declares has a ``poky little house," and no toys. Additionally, she flaunts her limited information base with anyone who will listen and becomes increasingly obsessed with the importance of good manners as she deals with the rude creatures of Wonderland. Alice maintains a superior attitude and behaves with solicitous indulgence toward those she believes are less privileged.
+
+%\section{Other information}
+
+%\subsection{Review}
+
+%Alice approaches Wonderland as an anthropologist, but maintains a strong sense of noblesse oblige that comes with her class status. She has confidence in her social position, education, and the Victorian virtue of good manners. Alice has a feeling of entitlement, particularly when comparing herself to Mabel, whom she declares has a ``poky little house," and no toys. Additionally, she flaunts her limited information base with anyone who will listen and becomes increasingly obsessed with the importance of good manners as she deals with the rude creatures of Wonderland. Alice maintains a superior attitude and behaves with solicitous indulgence toward those she believes are less privileged.
+
+%----------------------------------------------------------------------------------------
+
+\end{document} 
